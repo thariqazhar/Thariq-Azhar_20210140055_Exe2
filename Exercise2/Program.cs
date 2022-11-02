@@ -39,5 +39,20 @@ namespace Exercise2
                 Azhar[i] = Int32.Parse(s1);
             }
         }
+        //creating a method to sort array using insertion sort
+        public void insertionsort()
+        {
+            for (int i = 0; i < n; i++)
+            {
+                int temp = Azhar[i];
+                int TA = i - 1;
+                while (TA >= 0 && Azhar[TA] > temp)
+                {
+                    Azhar[TA + 1] = Azhar[TA];
+                    TA = TA - 1;
+                }
+                Azhar[TA + 1] = temp;
+            }
+        }
     }
 }
