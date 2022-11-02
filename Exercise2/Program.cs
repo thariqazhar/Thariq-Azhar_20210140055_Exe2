@@ -108,5 +108,13 @@ namespace Exercise2
                 MainMerge(Azhar, low, (mid + 1), high);
             }
         }
+
+        //creating main so that the program can run
+        static void Main(string[] args)
+        {
+            //declaring pilihanmenu
+            Program P = new Program();
+            int pilihanmenu;
+        }
     }
 }
