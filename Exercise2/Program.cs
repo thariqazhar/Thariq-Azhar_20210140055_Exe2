@@ -54,5 +54,19 @@ namespace Exercise2
                 Azhar[TA + 1] = temp;
             }
         }
+
+        //creating a method to display the sorted array
+        public void display()
+        {
+            Console.WriteLine("");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine(" Sorted array elements ");
+            Console.WriteLine("------------------------");
+            for (int TA = 0; TA < n; TA++)
+            {
+                Console.WriteLine(Azhar[TA]);
+            }
+            Console.WriteLine("");
+        }
     }
 }
