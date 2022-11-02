@@ -72,7 +72,7 @@ namespace Exercise2
         //creating a method to merge array
         static public void MainMerge(int[] Azhar, int low, int mid, int high)
         {
-            int[] temp = new int[25];
+            int[] temp = new int[30];
             int i, eol, num, pos;
             eol = (mid - 1);
             pos = low;
