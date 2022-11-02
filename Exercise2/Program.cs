@@ -115,6 +115,18 @@ namespace Exercise2
             //declaring pilihanmenu
             Program P = new Program();
             int pilihanmenu;
+
+            //creating a menu
+            do
+            {
+                Console.WriteLine("Menu Option");
+                Console.WriteLine("==================");
+                Console.WriteLine("1.insertion sort");
+                Console.WriteLine("2.merge sort");
+                Console.WriteLine("3.Exit");
+                Console.Write("Enter your choice (1,2,3) : ");
+                pilihanmenu = Convert.ToInt32(Console.ReadLine());
+            } while (pilihanmenu != 3);
         }
     }
 }
