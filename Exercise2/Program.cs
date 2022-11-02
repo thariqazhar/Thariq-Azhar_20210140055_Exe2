@@ -165,6 +165,12 @@ namespace Exercise2
                             Console.WriteLine(numbers[i]);
                         Console.ReadLine();
                         break;
+                    case 3:
+                        Console.WriteLine("exit");
+                        break;
+                    default:
+                        Console.WriteLine("error");
+                        break;
                 }
                 Console.WriteLine("\n\nPress Return to exit");
                 Console.ReadLine();
