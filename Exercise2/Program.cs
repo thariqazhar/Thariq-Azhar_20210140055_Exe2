@@ -68,5 +68,32 @@ namespace Exercise2
             }
             Console.WriteLine("");
         }
+
+        //creating a method to merge array
+        static public void MainMerge(int[] Azhar, int low, int mid, int high)
+        {
+            int[] temp = new int[25];
+            int i, eol, num, pos;
+            eol = (mid - 1);
+            pos = low;
+            num = (high - low + 1);
+
+            while ((low <= eol) && (mid <= high))
+            {
+                if (Azhar[low] <= Azhar[mid])
+                    temp[pos++] = Azhar[low++];
+                else
+                    temp[pos++] = Azhar[mid++];
+            }
+            while (low <= eol)
+                temp[pos++] = Azhar[low++];
+            while (mid <= high)
+                temp[pos++] = Azhar[mid++];
+            for (i = 0; i < num; i++)
+            {
+                Azhar[high] = temp[high];
+                high--;
+            }
+        }
     }
 }
