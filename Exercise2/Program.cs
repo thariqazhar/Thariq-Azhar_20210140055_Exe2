@@ -95,5 +95,18 @@ namespace Exercise2
                 high--;
             }
         }
+
+        //creating a method to sort the merged array
+        static public void SortMerge(int[] Azhar, int low, int high)
+        {
+            int mid;
+            if (high > low)
+            {
+                mid = (high + low) / 2;
+                SortMerge(Azhar, low, mid);
+                SortMerge(Azhar, (mid + 1), high);
+                MainMerge(Azhar, low, (mid + 1), high);
+            }
+        }
     }
 }
